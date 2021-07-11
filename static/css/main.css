@@ -1,1 +1,269 @@
+@font-face {
+  font-family:Code-Pro;
+  src:url('../fonts/code-pro/Code Pro Black.otf');
+  src:url('../fonts/code-pro/Code Pro Black LC.otf');
+  font-weight:900;
+}
 
+@font-face {
+  font-family:Code-Pro;
+  src:url('../fonts/code-pro/Code Pro Bold.otf');
+  src:url('../fonts/code-pro/Code Pro Bold LC.otf');
+  font-weight:800;
+}
+
+@font-face {
+  font-family:Code-Pro;
+  src:url('../fonts/code-pro/Code Pro.otf');
+  src:url('../fonts/code-pro/Code Pro LC.otf');
+  font-weight:600;
+}
+
+@font-face {
+  font-family:Code-Pro;
+  src:url('../fonts/code-pro/Code Pro Light.otf');
+  src:url('../fonts/code-pro/Code Pro Light LC.otf');
+  font-weight:500;
+}
+
+@font-face {
+  font-family:League-Spartan;
+  src:url('../fonts/league-spartan/league-spartan.bold.ttf');
+}
+
+@font-face {
+  font-family:Spartan-MB;
+  src:url('../fonts/spartan-mb/SpartanMB-Black.otf');
+  font-weight: 1000;
+}
+
+@font-face {
+  font-family:Spartan-MB;
+  src:url('../fonts/spartan-mb/SpartanMB-Extra-Bold.otf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family:Spartan-MB;
+  src:url('../fonts/spartan-mb/SpartanMB-Bold.otf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family:Spartan-MB;
+  src:url('../fonts/spartan-mb/SpartanMB-SemiBold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family:Spartan-MB;
+  src:url('../fonts/spartan-mb/SpartanMB-Regular.otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family:Hanson-Bold;
+  src:url('../fonts/hanson-bold/Hanson-Bold.ttf');
+  font-weight:900;
+}
+
+@font-face {
+  font-family:Eastman;
+  src:url('../fonts/eastman/eastman-trial.extrabold.otf');
+  font-weight:800;
+}
+
+@font-face {
+  font-family:NeueHaas;
+  src:url('../fonts/neue-haas/NeueHaasDisplayBlack.ttf');
+  font-weight:900;
+}
+
+@font-face {
+  font-family:NeueHaas;
+  src:url('../fonts/neue-haas/NeueHaasDisplayBold.ttf');
+  font-weight:800;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.card{
+  height:150px;
+  width:250px;
+  background-color:white;
+  border-radius:10px;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.card:hover{
+  background-color:#e6e6e6;
+}
+
+.link_logo{
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:0px;
+  height:25px;
+  width:25px;
+}
+
+.logo{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:30px;
+  height:50px;
+  width:50px;
+}
+
+.card_button{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  height: 30px;
+  width: 150px;
+  background-color: #a8e036;
+  text-align:center;
+  font-family: NeueHaas, sans-serif;
+  font-weight: 900;
+  font-size:18px;
+  border:none;
+  border-radius:5px;
+}
+
+.card_button:hover{
+  cursor:pointer;
+}
+
+.form_card{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  height:auto;
+  width:300px;
+  border-radius: 10px;
+  background-color:white;
+}
+
+.form_submit_button{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  height:30px;
+  width:100px;
+  background-color: #a8e036;
+  text-align:center;
+  font-family: NeueHaas, sans-serif;
+  font-weight: 900;
+  font-size:18px;
+  border:none;
+  border-radius:5px;
+}
+
+.form_submit_button:hover{
+  cursor:pointer;
+}
+
+input{
+  height:30px;
+  width:257px;
+  background-color: #e3e3e3;
+  border:none;
+  font-family: Spartan-MB, sans-serif;
+  font-weight:600;
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+
+input:focus{
+  outline: none;
+}
+
+textarea{
+  height:200px;
+  width:257px;
+  background-color: #e3e3e3;
+  border:none;
+  font-family: Spartan-MB, sans-serif;
+  font-weight:600;
+  font-size: 16px;
+  letter-spacing: -1px;
+  resize:none;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.success_message{
+  display:block;
+  height:auto;
+  width:400px;
+  color:#3bb000;
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #d0f0c0;
+  text-align:center;
+}
+
+.failure_message{
+  display:block;
+  height:auto;
+  width:400px;
+  color:#ab0000;
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #ff8484;
+  text-align:center;
+}
+
+.display_form_error{
+  font-family: Spartan-MB, sans-serif;
+  font-weight:500;
+  font-size: 15px;
+  letter-spacing: -1px;
+  text-align:left;
+  color: #ab0000;
+  display:inline;
+  padding:0px;
+  margin:0px;
+}
+
+.message{
+  font-family: Spartan-MB, sans-serif;
+  font-weight:700;
+  font-size: 18px;
+  letter-spacing: -1px;
+  text-align: center;
+  padding:10px;
+}
+
+label{
+  font-family: Spartan-MB, sans-serif;
+  font-weight:800;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+h1{
+  font-family:NeueHaas, sans-serif;
+  font-weight: 900;
+  font-size:100px;
+}
